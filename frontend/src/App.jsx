@@ -29,6 +29,21 @@ const SunIcon = () => (
   </svg>
 );
 
+const MoonIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+  </svg>
+);
+
+const ExportIcon = () => (
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+    <polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+  </svg>
+);
+
 const RupeeIcon = () => (
   <svg
     width="16"
@@ -47,34 +62,6 @@ const RupeeIcon = () => (
     <path d="M6 12h3" />
   </svg>
 );
-
-const ExportIcon = () => (
-  <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
-    stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-    <polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
-  </svg>
-);
-
-// const RupeeIcon = () => (
-//   <svg
-//     width="16"
-//     height="16"
-//     viewBox="0 0 24 24"
-//     fill="none"
-//     stroke="currentColor"
-//     strokeWidth="2"
-//     strokeLinecap="round"
-//     strokeLinejoin="round"
-//   >
-//     <path d="M6 4h12" />
-//     <path d="M6 8h12" />
-//     <path d="M9 12c4 0 6-2 6-4s-2-4-6-4" />
-//     <path d="M9 12l6 8" />
-//     <path d="M6 12h3" />
-//   </svg>
-// );
-
 /* ─────────────────────────────────────────
    CSV EXPORT UTILITY
 ───────────────────────────────────────── */
@@ -340,16 +327,16 @@ export default function App() {
         .ft-btn-icon { padding: 0 9px; min-width: 34px; }
 
         /* ── Clerk overrides ── */
-        // .cl-card {
-        //   background: var(--bg-card) !important;
-        //   border: 1px solid var(--border) !important;
-        //   border-radius: 18px !important;
-        //   box-shadow: 0 20px 60px rgba(0,0,0,.45) !important;
-        //   backdrop-filter: blur(16px) !important;
-        // }
-        // [data-theme="light"] .cl-card {
-        //   box-shadow: 0 10px 40px rgba(0,0,0,.1) !important;
-        // }
+        .cl-card {
+          background: var(--bg-card) !important;
+          border: 1px solid var(--border) !important;
+          border-radius: 18px !important;
+          box-shadow: 0 20px 60px rgba(0,0,0,.45) !important;
+          backdrop-filter: blur(16px) !important;
+        }
+        [data-theme="light"] .cl-card {
+          box-shadow: 0 10px 40px rgba(0,0,0,.1) !important;
+        }
 
         /* ── Grid background (light only) ── */
         [data-theme="light"] body::before {
@@ -377,7 +364,7 @@ export default function App() {
       <SignedOut>
         <div className="ft-auth">
           <div className="ft-auth-logo">
-            <div className="ft-auth-logo-icon"><RupeeIcon /></div>
+            <div className="ft-auth-logo-icon"><RupeeIcon/></div>
             <span>Finance Tracker</span>
           </div>
           <p className="ft-auth-sub">Sign in to track your personal finances</p>
@@ -392,7 +379,7 @@ export default function App() {
           {/* Topbar */}
           <div className="ft-topbar">
             <div className="ft-brand">
-              <div className="ft-brand-icon"><RupeeIcon /></div>
+              <div className="ft-brand-icon">< RupeeIcon /></div>
               <span className="ft-brand-label">Finance Tracker</span>
             </div>
 
