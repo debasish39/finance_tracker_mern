@@ -355,6 +355,11 @@ export default function App() {
             linear-gradient(to bottom, rgba(200,169,126,.03) 1px, transparent 1px);
           background-size: 40px 40px;
         }
+          @media (max-width: 640px) {
+  .ft-hide-mobile {
+    display: none;
+  }
+}
       `}</style>
 
       {/* Loading bar */}
@@ -380,7 +385,9 @@ export default function App() {
           <div className="ft-topbar">
             <div className="ft-brand">
               <div className="ft-brand-icon">< RupeeIcon /></div>
-              <span className="ft-brand-label">Finance Tracker</span>
+             <span className="ft-brand-label ft-hide-mobile">
+  Finance Tracker
+</span>
             </div>
 
             <div className="ft-actions">
