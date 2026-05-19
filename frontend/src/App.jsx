@@ -327,16 +327,16 @@ export default function App() {
         .ft-btn-icon { padding: 0 9px; min-width: 34px; }
 
         /* ── Clerk overrides ── */
-        .cl-card {
-          background: var(--bg-card) !important;
-          border: 1px solid var(--border) !important;
-          border-radius: 18px !important;
-          box-shadow: 0 20px 60px rgba(0,0,0,.45) !important;
-          backdrop-filter: blur(16px) !important;
-        }
-        [data-theme="light"] .cl-card {
-          box-shadow: 0 10px 40px rgba(0,0,0,.1) !important;
-        }
+        // .cl-card {
+        //   background: var(--bg-card) !important;
+        //   border: 1px solid var(--border) !important;
+        //   border-radius: 18px !important;
+        //   box-shadow: 0 20px 60px rgba(0,0,0,.45) !important;
+        //   backdrop-filter: blur(16px) !important;
+        // }
+        // [data-theme="light"] .cl-card {
+        //   box-shadow: 0 10px 40px rgba(0,0,0,.1) !important;
+        // }
 
         /* ── Grid background (light only) ── */
         [data-theme="light"] body::before {
